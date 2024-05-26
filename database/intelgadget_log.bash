@@ -1,0 +1,1 @@
+"C:\Program Files\Intel\Power Gadget 3.6\IntelPowerGadget.exe" -log

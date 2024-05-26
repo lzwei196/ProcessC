@@ -1,0 +1,9 @@
+Metric,Value
+Project_name,test8
+Elapsed Time (seconds),33.884513
+CPU Energy (kWh),0.00038285673400000004
+GPU Energy (kWh),0.00010779609981481483
+RAM Power Usage (kWh),0.00022589675333333333
+Total Energy Usage (kWh),0.0007165495871481482
+Grid Carbon Intensity (g/CO2 Eq),691.78467
+Total Carbon Emission (g/CO2 Eq),0.4956980196839179
