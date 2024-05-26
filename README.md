@@ -18,7 +18,7 @@ Clone the repository.
 Install the required Python libraries using pip:
 
 sh
-Copy code
+
 pip install -r requirements.txt
 Ensure that the configuration file conf.json is available in the working directory.
 
@@ -26,11 +26,10 @@ Usage
 ## Running ProcessC
 To start monitoring, run the main script:
 
-sh
-Copy code
+
 python main.py
 Configuration
-The program checks for a configuration file (conf.json) to load existing projects. If no projects are found, you will be prompted to create a new project.
+The program checks for a configuration file (conf.json) to load existing projects. You will be prompted to create a new project if no projects are found.
 
 ## Creating a New Project
 Enter the name of the new project.
@@ -47,8 +46,7 @@ Log the CPU, GPU, and RAM power consumption.
 Calculate the total energy usage and carbon emissions.
 Output the results in a tabular format and save to a CSV file.
 Example Output
-scss
-Copy code
+
 +-----------------------------+----------------------+
 | Metric                      | Value                |
 +-----------------------------+----------------------+
@@ -67,14 +65,15 @@ Internet Connection Check: Verifies if an internet connection is available.
 Location Detection: Automatically detects the user's region and country.
 
 # THINGS TO LOOKOUT FOR WHEN MONITORING WITH ProcessC
-** AMD cpus can not the Intelpower gadget, so default TDP for each type of CPU provided by the AMD is used
-** When running direct mode, ProcessC checks if the desired program is running. 
-** \However, for cmd-based executbles, all names may be "OpenConsole.log", so Make sure other programs that also named "OpenConsole.log" is closed
+** AMD CPUs can not the Intel power gadget, so the default TDP for each type of CPU provided by AMD is used**
+** When running direct mode, ProcessC checks if the desired program is running. **
+** However, for cmd-based executables, all names may be "OpenConsole.log", **
+** So make sure other programs that are also named "OpenConsole.log" are closed **
 
-# Developer: Ziwei Li Zhiming Qi Birk Li
-# Developed @ Qi lab McGill University Bio-resource engineering
-# Any questions Please email leo.li@mail.mcgill.ca
-# Please let the developer know if addtional support is needed for other process-based models
+*** Developer: Ziwei Li Zhiming Qi Birk Li***
+*** Developed @ Qi lab McGill University Bio-resource engineering***
+** Any questions Please email leo.li@mail.mcgill.ca**
+** Please let us know if any additional support is needed for other process-based models**
 
 
 License
