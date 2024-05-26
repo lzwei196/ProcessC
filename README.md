@@ -69,15 +69,16 @@ Internet Connection Check: Verifies if an internet connection is available.
 Location Detection: Automatically detects the user's region and country.
 
 ## THINGS TO LOOKOUT FOR WHEN MONITORING WITH ProcessC
-**AMD CPUs can not the Intel power gadget, so the default TDP for each type of CPU provided by AMD is used**\
 
-**When running direct mode, ProcessC checks if the desired program is running.**\
+**AMD CPUs can not the Intel power gadget, so the default TDP for each type of CPU provided by AMD is used**
 
-**However, for cmd-based executables, all names may be "OpenConsole.log",**\
+**When running direct mode, ProcessC checks if the desired program is running.**
+
+**However, for cmd-based executables, all names may be "OpenConsole.log",**
 
 **So make sure other programs that are also named "OpenConsole.log" are closed**
 
-***Developer: Ziwei Li Zhiming Qi Birk Li***\
+***Developer: Ziwei Li Zhiming Qi Birk Li***
 
 ***Developed @ Qi lab McGill University Bio-resource engineering***
 
