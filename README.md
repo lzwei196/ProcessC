@@ -1,1 +1,81 @@
 # ProcessC
+
+ProcessC is a program designed to monitor energy usage and carbon emissions for running process-based modelling simulations. 
+It provides detailed tracking and analysis of CPU, GPU, and RAM power consumption and calculates the total carbon emissions based on country or regional grid carbon intensity.
+
+## Features
+Monitors CPU, GPU, and RAM energy usage.
+Calculates total carbon emissions for running simulations.
+Supports both Intel and AMD CPUs.
+Provides options for using existing projects or creating new ones.
+Fetches carbon intensity data from various sources.
+Requirements
+Python 3.x
+Required Python libraries: os, json, datetime, pprint, tabulate, requests, pandas, psutil, cpuinfo, GPUtil, logging, csv, art
+Installation
+Clone the repository.
+
+Install the required Python libraries using pip:
+
+sh
+Copy code
+pip install -r requirements.txt
+Ensure that the configuration file conf.json is available in the working directory.
+
+Usage
+## Running ProcessC
+To start monitoring, run the main script:
+
+sh
+Copy code
+python main.py
+Configuration
+The program checks for a configuration file (conf.json) to load existing projects. If no projects are found, you will be prompted to create a new project.
+
+## Creating a New Project
+Enter the name of the new project.
+Choose the monitoring mode: Bash mode or Direct mode.
+Provide the necessary details for the chosen mode.
+Input system specifications, such as CPU and GPU info, manually if not auto-detected.
+Select the source for grid carbon intensity data.
+Save the new project configuration.
+Monitoring Process
+After selecting or creating a project, ProcessC will:
+
+### Start monitoring energy usage and emissions.
+Log the CPU, GPU, and RAM power consumption.
+Calculate the total energy usage and carbon emissions.
+Output the results in a tabular format and save to a CSV file.
+Example Output
+scss
+Copy code
++-----------------------------+----------------------+
+| Metric                      | Value                |
++-----------------------------+----------------------+
+| Project_name                | MyProject            |
+| Elapsed Time (seconds)      | 3600                 |
+| CPU Energy (kWh)            | 0.05                 |
+| GPU Energy (kWh)            | 0.03                 |
+| RAM Power Usage (kWh)       | 0.02                 |
+| Total Energy Usage (kWh)    | 0.10                 |
+| Grid Carbon Intensity (g/CO2 Eq) | 500.0           |
+| Total Carbon Emission (g/CO2 Eq) | 50.0            |
++-----------------------------+----------------------+
+Additional Functions
+System Specifications: Automatically retrieves and displays CPU, GPU, and RAM information.
+Internet Connection Check: Verifies if an internet connection is available.
+Location Detection: Automatically detects the user's region and country.
+
+# THINGS TO LOOKOUT FOR WHEN MONITORING WITH ProcessC
+** AMD cpus can not the Intelpower gadget, so default TDP for each type of CPU provided by the AMD is used
+** When running direct mode, ProcessC checks if the desired program is running. 
+** \However, for cmd-based executbles, all names may be "OpenConsole.log", so Make sure other programs that also named "OpenConsole.log" is closed
+
+# Developer: Ziwei Li Zhiming Qi Birk Li
+# Developed @ Qi lab McGill University Bio-resource engineering
+# Any questions Please email leo.li@mail.mcgill.ca
+# Please let the developer know if addtional support is needed for other process-based models
+
+
+License
+This project is licensed under the MIT License.
