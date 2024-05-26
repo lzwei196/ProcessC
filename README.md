@@ -17,19 +17,22 @@ Clone the repository.
 
 Install the required Python libraries using pip:
 
-sh
-
 pip install -r requirements.txt
 Ensure that the configuration file conf.json is available in the working directory.
 
 Usage
 ## Running ProcessC
+**Before running the ProcessC, Several information needs to be available**
+1. The way your process-model could be running from CLI (Your model has to be able to run from CLI if you want to use bash mode, otherwise direct mode only)
+2. The name of your program showing in the subprocess when running
+3. The directory of your model
+   
 To start monitoring, run the main script:
-
-
 python main.py
 Configuration
-The program checks for a configuration file (conf.json) to load existing projects. You will be prompted to create a new project if no projects are found.
+
+The program checks for a configuration file (conf.json) to load existing projects. 
+You will be prompted to create a new project if no projects are found.
 
 ## Creating a New Project
 Enter the name of the new project.
@@ -47,33 +50,34 @@ Calculate the total energy usage and carbon emissions.
 Output the results in a tabular format and save to a CSV file.
 Example Output
 
-+-----------------------------+----------------------+
-| Metric                      | Value                |
-+-----------------------------+----------------------+
-| Project_name                | MyProject            |
-| Elapsed Time (seconds)      | 3600                 |
-| CPU Energy (kWh)            | 0.05                 |
-| GPU Energy (kWh)            | 0.03                 |
-| RAM Power Usage (kWh)       | 0.02                 |
-| Total Energy Usage (kWh)    | 0.10                 |
-| Grid Carbon Intensity (g/CO2 Eq) | 500.0           |
-| Total Carbon Emission (g/CO2 Eq) | 50.0            |
-+-----------------------------+----------------------+
-Additional Functions
+| Metric                          | Value     |
+|---------------------------------|-----------|
+| Project_name                    | MyProject |
+| Elapsed Time (seconds)          | 3600      |
+| CPU Energy (kWh)                | 0.05      |
+| GPU Energy (kWh)                | 0.03      |
+| RAM Power Usage (kWh)           | 0.02      |
+| Total Energy Usage (kWh)        | 0.10      |
+| Grid Carbon Intensity (g/CO2 Eq)| 500.0     |
+| Total Carbon Emission (g/CO2 Eq)| 50.0      |
+
+## Additional Functions
 System Specifications: Automatically retrieves and displays CPU, GPU, and RAM information.
+
 Internet Connection Check: Verifies if an internet connection is available.
+
 Location Detection: Automatically detects the user's region and country.
 
-# THINGS TO LOOKOUT FOR WHEN MONITORING WITH ProcessC
-** AMD CPUs can not the Intel power gadget, so the default TDP for each type of CPU provided by AMD is used**
-** When running direct mode, ProcessC checks if the desired program is running. **
-** However, for cmd-based executables, all names may be "OpenConsole.log", **
-** So make sure other programs that are also named "OpenConsole.log" are closed **
+## THINGS TO LOOKOUT FOR WHEN MONITORING WITH ProcessC
+**AMD CPUs can not the Intel power gadget, so the default TDP for each type of CPU provided by AMD is used**
+**When running direct mode, ProcessC checks if the desired program is running.**
+**However, for cmd-based executables, all names may be "OpenConsole.log",**
+**So make sure other programs that are also named "OpenConsole.log" are closed**
 
-*** Developer: Ziwei Li Zhiming Qi Birk Li***
-*** Developed @ Qi lab McGill University Bio-resource engineering***
-** Any questions Please email leo.li@mail.mcgill.ca**
-** Please let us know if any additional support is needed for other process-based models**
+***Developer: Ziwei Li Zhiming Qi Birk Li***
+***Developed @ Qi lab McGill University Bio-resource engineering***
+**Any questions Please email leo.li@mail.mcgill.ca**
+**Please let us know if any additional support is needed for other process-based models**
 
 
 License
