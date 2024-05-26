@@ -22,8 +22,8 @@ Ensure that the configuration file conf.json is available in the working directo
 
 Usage
 ## Running ProcessC
-**Before running the ProcessC, Several information needs to be available**
-1. The way your process-model could be running from CLI (Your model has to be able to run from CLI if you want to use bash mode, otherwise direct mode only)
+**Before running the ProcessC, Several pieces of information needs to be available**
+1. The CMD your process-based model could be running from CLI (Your model has to be able to run from CLI if you want to use bash mode, otherwise direct mode only)
 2. The name of your program showing in the subprocess when running
 3. The directory of your model
    
@@ -69,12 +69,12 @@ Internet Connection Check: Verifies if an internet connection is available.
 Location Detection: Automatically detects the user's region and country.
 
 ## THINGS TO LOOKOUT FOR WHEN MONITORING WITH ProcessC
-**AMD CPUs can not the Intel power gadget, so the default TDP for each type of CPU provided by AMD is used**
-**When running direct mode, ProcessC checks if the desired program is running.**
-**However, for cmd-based executables, all names may be "OpenConsole.log",**
-**So make sure other programs that are also named "OpenConsole.log" are closed**
+**AMD CPUs can not the Intel power gadget, so the default TDP for each type of CPU provided by AMD is used**\
+**When running direct mode, ProcessC checks if the desired program is running.**\
+**However, for cmd-based executables, all names may be "OpenConsole.log",**\
+**So make sure other programs that are also named "OpenConsole.log" are closed**\
 
-***Developer: Ziwei Li Zhiming Qi Birk Li***
+***Developer: Ziwei Li Zhiming Qi Birk Li***\
 ***Developed @ Qi lab McGill University Bio-resource engineering***
 **Any questions Please email leo.li@mail.mcgill.ca**
 **Please let us know if any additional support is needed for other process-based models**
