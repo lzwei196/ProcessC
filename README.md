@@ -1,8 +1,8 @@
 # ProcessC <img src="https://github.com/lzwei196/ProcessC/blob/main/logo/logo_processc.jpg" width="100" />
 
 
-**ProcessC is a program designed to monitor energy usage and carbon emissions for running process-based modelling simulations.\
-It provides detailed tracking and analysis of CPU, GPU, and RAM power consumption and calculates the total carbon emissions based on\
+**ProcessC is a program designed to monitor energy usage and carbon emissions for running process-based modelling simulations.
+It provides detailed tracking and analysis of CPU, GPU, and RAM power consumption and calculates the total carbon emissions based on
 country or regional grid carbon intensity.**
 
 ## Features
