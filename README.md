@@ -1,5 +1,4 @@
-# ProcessC
-<img src="https://github.com/lzwei196/ProcessC/blob/main/logo/logo_processc.jpg" width="200" />
+# ProcessC <img src="https://github.com/lzwei196/ProcessC/blob/main/logo/logo_processc.jpg" width="200" />
 
 
 ProcessC is a program designed to monitor energy usage and carbon emissions for running process-based modelling simulations. 
