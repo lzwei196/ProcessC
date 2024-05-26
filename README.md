@@ -4,11 +4,11 @@ ProcessC is a program designed to monitor energy usage and carbon emissions for 
 It provides detailed tracking and analysis of CPU, GPU, and RAM power consumption and calculates the total carbon emissions based on country or regional grid carbon intensity.
 
 ## Features
-Monitors CPU, GPU, and RAM energy usage.
-Calculates total carbon emissions for running simulations.
-Supports both Intel and AMD CPUs.
-Provides options for using existing projects or creating new ones.
-Fetches carbon intensity data from various sources.
+Monitors CPU, GPU, and RAM energy usage.\
+Calculates total carbon emissions for running simulations.\
+Supports both Intel and AMD CPUs.\
+Provides options for using existing projects or creating new ones.\
+Fetches carbon intensity data from various sources.\
 Requirements
 Python 3.x
 Required Python libraries: os, json, datetime, pprint, tabulate, requests, pandas, psutil, cpuinfo, GPUtil, logging, csv, art
