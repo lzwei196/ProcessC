@@ -70,13 +70,19 @@ Location Detection: Automatically detects the user's region and country.
 
 ## THINGS TO LOOKOUT FOR WHEN MONITORING WITH ProcessC
 **AMD CPUs can not the Intel power gadget, so the default TDP for each type of CPU provided by AMD is used**\
+
 **When running direct mode, ProcessC checks if the desired program is running.**\
+
 **However, for cmd-based executables, all names may be "OpenConsole.log",**\
-**So make sure other programs that are also named "OpenConsole.log" are closed**\
+
+**So make sure other programs that are also named "OpenConsole.log" are closed**
 
 ***Developer: Ziwei Li Zhiming Qi Birk Li***\
+
 ***Developed @ Qi lab McGill University Bio-resource engineering***
+
 **Any questions Please email leo.li@mail.mcgill.ca**
+
 **Please let us know if any additional support is needed for other process-based models**
 
 
