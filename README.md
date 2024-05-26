@@ -19,13 +19,13 @@ Clone the repository.
 
 Install the required Python libraries using pip:
 
-pip install -r requirements.txt
+pip install -r requirements.txt\
 Ensure that the configuration file conf.json is available in the working directory.
 
 Usage
 ## Running ProcessC
 **Before running the ProcessC, Several pieces of information needs to be available**
-1. The CMD your process-based model could be running from CLI (Your model has to be able to run from CLI if you want to use bash mode, otherwise direct mode only)
+1. The CMD your process-based model could be running from CLI\ (Your model has to be able to run from CLI if you want to use bash mode, otherwise direct mode only)
 2. The name of your program showing in the subprocess when running
 3. The directory of your model
    
