@@ -24,8 +24,8 @@ Ensure that the configuration file conf.json is available in the working directo
 
 # Usage
 ## Running ProcessC
-**Before running the ProcessC, Several pieces of information needs to be available**
-1. The CMD your process-based model could be running from CLI\ (Your model has to be able to run from CLI if you want to use bash mode, otherwise direct mode only)
+**Before running the ProcessC, Several pieces of information need to be available**
+1. The CMD your process-based model could be running from CLI\ (Your model has to be able to run from CLI if you want to use bash mode otherwise direct mode only)
 2. The name of your program showing in the subprocess when running
 3. The directory of your model
    
@@ -63,6 +63,14 @@ Example Output
 | Grid Carbon Intensity (g/CO2 Eq)| 500.0     |
 | Total Carbon Emission (g/CO2 Eq)| 50.0      |
 
+## For monitoring the entire auto-calibration process
+The main function could be edited as a wrapper to execute the auto-calibration program
+Currently, ProcessC supports auto-calibration of RS-DPCF
+Contact us if you need support with other auto-calibration software.
+
+## Logging
+After each monitoring project is finished,\ a CSV file containing all the output with the project name as the file name would be stored in the output folder.
+
 ## Additional Functions
 System Specifications: Automatically retrieves and displays CPU, GPU, and RAM information.
 
@@ -72,7 +80,7 @@ Location Detection: Automatically detects the user's region and country.
 
 ## THINGS TO LOOKOUT FOR WHEN MONITORING WITH ProcessC
 
-**AMD CPUs can not the Intel power gadget, so the default TDP for each type of CPU provided by AMD is used**
+**AMD CPUs can not use the Intel power gadget under Win, so the default TDP for each type of CPU provided by AMD is used**
 
 **When running direct mode, ProcessC checks if the desired program is running.**
 
@@ -84,7 +92,7 @@ Location Detection: Automatically detects the user's region and country.
 
 ***Developed @ Qi lab McGill University Bio-resource engineering***
 
-**Any questions Please email leo.li@mail.mcgill.ca**
+## Any questions Please email leo.li@mail.mcgill.ca
 
 **Please let us know if any additional support is needed for other process-based models**
 
