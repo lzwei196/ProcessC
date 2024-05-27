@@ -88,6 +88,8 @@ Location Detection: Automatically detects the user's region and country.
 
 **So make sure other programs that are also named "OpenConsole.log" are closed**
 
+**OurWorldInData is a local database.\ Electricitymap requires paid subscriptions, or you can manually check the grid carbon intensity in the given location during a specific year.**
+
 ***Developer: Ziwei Li Zhiming Qi Birk Li Junzeng Xu Ruiqi Wu Yuchen Liu***
 
 ***Developed @ Qi lab McGill University Bioresource engineering and Hohai University***
