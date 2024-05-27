@@ -92,7 +92,7 @@ Location Detection: Automatically detects the user's region and country.
 
 ***Developer: Ziwei Li Zhiming Qi Birk Li Junzeng Xu Ruiqi Wu Yuchen Liu***
 
-***Developed @ Qi lab McGill University Bioresource engineering and Hohai University***
+***Developed @ Qi lab McGill University Bioresource Engineering and Hohai University***
 
 ## Any questions Please email leo.li@mail.mcgill.ca
 
