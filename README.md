@@ -1,7 +1,7 @@
 #### *ProcessC* <img src="https://github.com/lzwei196/ProcessC/blob/main/logo/logo_processc.jpg" width="100" />
 
 
-**ProcessC is a program designed to monitor energy usage and carbon emissions for running process-based modelling simulations.
+**_ProcessC_ is a program designed to monitor energy usage and carbon emissions for running process-based modelling simulations.
 It provides detailed tracking and analysis of CPU, GPU, and RAM power consumption and calculates the total carbon emissions based on
 country or regional grid carbon intensity.**
 
@@ -23,8 +23,8 @@ pip install -r requirements.txt\
 Ensure that the configuration file conf.json is available in the working directory.
 
 # Usage
-## Running ProcessC
-**Before running the ProcessC, Several pieces of information need to be available**
+## Running _ProcessC_
+**Before running the _ProcessC_, Several pieces of information need to be available**
 1. The CMD your process-based model could be running from CLI\ (Your model has to be able to run from CLI if you want to use bash mode otherwise direct mode only)
 2. The name of your program showing in the subprocess when running
 3. The directory of your model
@@ -44,12 +44,12 @@ Input system specifications, such as CPU and GPU info, manually if not auto-dete
 Select the source for grid carbon intensity data.
 Save the new project configuration.
 Monitoring Process
-After selecting or creating a project, ProcessC will:
+After selecting or creating a project, _ProcessC_ will:
 
 ### Start monitoring energy usage and emissions.
 Log the CPU, GPU, and RAM power consumption.
 Calculate the total energy usage and carbon emissions.
-Output the results in a tabular format and save to a CSV file.
+Output the results in a tabular format and save them to a CSV file.
 Example Output
 
 | Metric                          | Value     |
@@ -65,7 +65,7 @@ Example Output
 
 ## For monitoring the entire auto-calibration process
 The main function could be edited as a wrapper to execute the auto-calibration program
-Currently, ProcessC supports auto-calibration of RS-DPCF
+Currently, _ProcessC_ supports auto-calibration of RS-DPCF
 Contact us if you need support with other auto-calibration software.
 
 ## Logging
@@ -78,11 +78,11 @@ Internet Connection Check: Verifies if an internet connection is available.
 
 Location Detection: Automatically detects the user's region and country.
 
-## THINGS TO LOOKOUT FOR WHEN MONITORING WITH ProcessC
+## THINGS TO LOOKOUT FOR WHEN MONITORING WITH _ProcessC_
 
 **AMD CPUs can not use the Intel power gadget under Win, so the default TDP for each type of CPU provided by AMD is used**
 
-**When running direct mode, ProcessC checks if the desired program is running.**
+**When running direct mode, _ProcessC_ checks if the desired program is running.**
 
 **However, for cmd-based executables, all names may be "OpenConsole.log",**
 
