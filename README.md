@@ -69,7 +69,7 @@ Currently, ProcessC supports auto-calibration of RS-DPCF
 Contact us if you need support with other auto-calibration software.
 
 ## Logging
-After each monitoring project is finished,\ a CSV file containing all the output with the project name as the file name would be stored in the output folder.
+After each monitoring project is finished, a CSV file containing all the output with the project name as the file name would be stored in the output folder.
 
 ## Additional Functions
 System Specifications: Automatically retrieves and displays CPU, GPU, and RAM information.
