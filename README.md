@@ -88,9 +88,9 @@ Location Detection: Automatically detects the user's region and country.
 
 **So make sure other programs that are also named "OpenConsole.log" are closed**
 
-***Developer: Ziwei Li Zhiming Qi Birk Li***
+***Developer: Ziwei Li Zhiming Qi Birk Li Junzeng Xu Ruiqi Wu Yuchen Liu***
 
-***Developed @ Qi lab McGill University Bio-resource engineering***
+***Developed @ Qi lab McGill University Bioresource engineering and Hohai University***
 
 ## Any questions Please email leo.li@mail.mcgill.ca
 
