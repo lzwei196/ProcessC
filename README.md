@@ -5,6 +5,9 @@
 It provides detailed tracking and analysis of CPU, GPU, and RAM power consumption and calculates the total carbon emissions based on
 country or regional grid carbon intensity.**
 
+Update
+**ProcessC now offers the ability to provide the smart computation grid algorithm based on the computation power of the desginated CPU/GPU requirement.
+
 ## Features
 Monitors CPU, GPU, and RAM energy usage.\
 Calculates total carbon emissions for running simulations.\
